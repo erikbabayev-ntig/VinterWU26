@@ -1,1 +1,115 @@
-/* Här skrivs all din CSS */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --MainColor: rgb(220,54,65);
+    --BGColor: rgb(2, 2, 2);
+    --TertColor: rgb(204, 206, 196);
+}
+
+nav {
+    background-color: var(--MainColor );
+    grid-area:nav; 
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+
+nav p {
+    color: rgba(0, 0, 0, 0.132);
+}
+
+.navblock {
+    display: block;
+    background-color: var();
+}
+
+nav a {
+    display: block;
+    align-self: center;
+}
+
+header {
+    background-color: var(--MainColor);
+}
+
+
+body {
+    background-color: var(--BGColor)
+}
+
+
+
+#headerlogo {
+    background-image: url(/img/pizza1.avif);
+    display: block;
+}
+
+.filler {
+    background-color: var(--BGColor);
+    display: block;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    background-color: var(--TertColor);
+    color: black;
+}
+
+.cardscontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    background-color: var(--MainColor);
+    max-width: 400px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.cardimage {
+    background-color: var(--BGColor);
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    clip:100px;
+}
+
+.card a {
+    text-align: center;
+    padding: 15px 20px;
+    margin: 20px 50px;
+    display: block;
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.2s ease;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+}
+
+#headerlogo {
+    width: 100px;
+    height:100px;
+}
